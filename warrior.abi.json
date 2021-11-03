@@ -41,14 +41,6 @@
 			"outputs": [
 				{"name":"value0","type":"int8"}
 			]
-		},
-		{
-			"name": "lives",
-			"inputs": [
-			],
-			"outputs": [
-				{"name":"lives","type":"int8"}
-			]
 		}
 	],
 	"data": [

@@ -4,6 +4,8 @@ import 'gameObjectInterface.sol';
 
 contract WarUnit is GameObjectInterface {
     int8 power;
+    int8 lives;
+    int8 defence;
 
     modifier onlyOwner {
         require(msg.pubkey() == tvm.pubkey(), 1337);
@@ -34,9 +36,6 @@ contract WarUnit is GameObjectInterface {
         tvm.accept();
         return power;
     }
-
-        int8 public lives;
-    int8 defence;
 
     function getDefence() public view returns (int8) {
         tvm.accept();
